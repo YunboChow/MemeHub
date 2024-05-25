@@ -2,13 +2,15 @@ import axios from 'axios';
 
 //maybe add so that it fetches more than just one
 export const memeAPI = () => {
-    const getMeme = () => {
-        axios.get('https://meme-api.com/gimme')
+    const getMeme =  async () => {
+        let items;
+        await axios.get('https://meme-api.com/gimme')
         .then( res => {
-            const items = res.data;
+            items = res.data;
             console.log(items);
-            return items;
+            
         });
+        return items;
     }
 
     return{
