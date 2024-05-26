@@ -23,7 +23,7 @@ function App() {
 
   return (
     <>
-      <Box w='100vw' h='100vh' overflow='auto' background='radial-gradient(circle, #25273D, #010316)'>
+      <Box display='flex' alignItems='center' justifyContent='center' w='100vw' h='100vh' overflow='auto' background='radial-gradient(circle, #25273D, #010316)'>
         { loading && (
           <Meme meme={memes}/>
         )}

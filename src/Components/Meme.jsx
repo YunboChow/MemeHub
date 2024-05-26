@@ -2,7 +2,7 @@ import { Flex, Text, Image, Card, CardHeader, CardBody, CardFooter, Stack, Headi
 
 function Meme({ meme }) {
     return (
-        <Card maxW='sm'>
+        <Card maxW='lg' align='center'>
             <CardBody>
                 <Image
                 /* src={[...meme.preview].pop()} */
